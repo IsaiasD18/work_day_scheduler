@@ -1,3 +1,5 @@
+const divs = document.querySelector('.container');
+
 // This should display the date
 const todayDate = moment().format('dddd, MMM Do YYYY');
 $("#currentDay").html(todayDate);
@@ -40,6 +42,10 @@ $(document).ready(function () {
             }
         })
     }
+
+divs.forEach(div => {
+    
+})
 
     // Get the values in local starage based on the hours
     $("#hour8 .description").val(localStorage.getItem("hour8"));
